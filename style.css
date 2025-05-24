@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: lavenderblush;
+}
+h1 {
+  color: deeppink;
+}
+p {
+  color: mediumvioletred;
+  font-style: oblique;
+}
+.class-name {
+  color: purple;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+h2 {
+  color: hotpink;
+}
+a {
+  color: darkmagenta;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+h3 {
+  color: hotpink;
+}
+.h2{
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+ul{
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+ flex-wrap: wrap;
+}
+li {
+ background-color: #ffffff ;
+ border: 5px solid rgb(255, 153, 194);
+ border-radius: 6px;
+ padding: 10px;
+ list-style: none;
+}

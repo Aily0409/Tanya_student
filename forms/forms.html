@@ -1,0 +1,69 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Html forms</title>
+    <style>
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+      .input-area{
+        margin-bottom: 1rem;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  
+  <body>
+    <form action="javascript:void(0)">
+      <label for="fname">First Name</label>
+      <input class="input-area" type="text" name="fname" required>
+      
+      <label for="lname">Last Name</label>
+      <input class="input-area" type="text" name="lname" required>
+      
+      <label for="email">Email</label>
+      <input class="input-area" type="email" name="email" required>
+      
+      <label for="bday">Birthdate</label>
+      <input class="input-area" type="date" name="bday" required>
+      
+      <label for="age">Age</label>
+      <input class="input-area" type="number" name="age" required>
+      
+      <label for="country">Nationality</label>
+      <select name="country" required>
+        <option>Mexico</option>
+        <option>United States</option>
+        <option>Canada</option>
+        <option>Other</option>
+      </select>
+      
+      <label for="gender">Gender</label>
+      <div>
+        <div>
+          <input class="input-area" type="radio" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input class="input-area" type="radio" name="gender" value="male">
+          <label for="male">Male</label>
+        </div>
+      </div>
+      
+      <label for="favcolor">Favorite Color</label>
+      <input class="input-area" type="text" name="favcolor" required>
+      
+      <label for="password">New Password</label>
+      <input class="input-area" type="password" name="password" required>
+      
+      <div>
+        <input type="reset">
+        <input type="submit">
+      </div>
+      
+    </form>
+  </body>
+</html>

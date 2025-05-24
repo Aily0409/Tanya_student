@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Light Bulb</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 98vh;
+            gap: 32px;
+        }
+        .light-box, .switch-box {
+            border: 1px pink solid;
+            width: 250px;
+            height: 250px;
+        }
+        .light-off {
+            background: url(https://icons.iconarchive.com/icons/iconleak/stainless/256/bulb-icon.png);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: 50%;
+        }
+        .light-on {
+            background: url(https://icons.iconarchive.com/icons/iconleak/or/256/light-bulb-icon.png);
+            filter: drop-shadow(0 -30px 40px rgba(250,224,103,.5));
+        }
+
+        .switch-off {
+            background: url(https://png.pngtree.com/png-vector/20250320/ourmid/pngtree-white-light-switch-panel-isolated-on-transparent-background-png-image_15795725.png);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            transform: scaleY(-1);
+        }
+        .switch-on {
+            transform: scaleY(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="light-box light-off"></div>
+
+    <div onclick="turnLight()" class="switch-box switch-off"></div>
+</body>
+<script>
+  //queryselector is a function that allows you to select an specific element in a document and save it in a variable, that way you can make modifications.
+  let lightBulb = document.querySelector(".light-box");
+  let lightSwitch = document.querySelector(".switch-box");
+  let background = document.querySelector("body");
+  let lightUp = window.getComputedStyle(background).color;
+  console.log(lightUp);
+  function turnLight(){
+    lightBulb.classList.toggle("light-on");
+    lightSwitch.classList.toggle("switch-on");
+  }
+</script>
+</html>

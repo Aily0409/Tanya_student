@@ -1,0 +1,49 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  
+  <body>
+    <script>
+      //EXERCISE 1
+      function add7(nm){
+        console.log(nm+7);
+      };
+       let numero = prompt("Pick a number:");
+       let num = parseInt(numero);
+      add7(num);
+      
+      
+      //exercise 2
+      function multiplytwonums(num0, num1){
+        return num0 * num1
+      }
+      console.log(multiplytwonums(25, 25));
+      
+      //exercise 3
+      let b = "Artemis";
+      lastletter(b);
+      function lastletter(a){
+        console.log(a.slice(-1));
+      }
+      
+      //exercise 4
+      let string = "oNLY CAPitalize fiRST cHaRACter"
+
+function capitalizeFirstChar(str){
+    str = str.split("")
+    for(let i = 0; i < str.length; i++) {
+        str[i] = (i === 0 ? str[i].toUpperCase() : str[i].toLowerCase())
+    }
+    return str.join("")
+}
+
+console.log(capitalizeFirstChar(string))
+ 
+
+
+       </script>
+  </body>
+</html>

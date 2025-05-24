@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    color: rebeccapurple;
+  }
+  
+  p,
+  li,
+  a {
+    color: palevioletred;
+  }
+  
+  .special {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  #unique {
+    color: darkmagenta;
+  }
+  
+  li em {
+    color: rosybrown;
+  }
+  
+  h1 + p {
+    font-size: 200%;
+  }
+  
+  a:link {
+    color: paleturquoise;
+  }
+  a.visited {
+    color: paleturquoise;
+  }
+  
+  h1 + p .special {
+    color: khaki;
+    background-color: violet;
+    padding: 5px;
+  }
+  
+  .outer {
+    border: 5px solid powderblue;
+  }
+  
+  .box {
+    padding: 10px 8px 10px 5px;
+    background-color: paleturquoise;
+    color: white;
+    width: calc(90% - 30px);
+  }
+  
+  .box-2 {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    transform: rotate(-20deg);
+  }
+  
+  body {
+    background-color: honeydew;
+  }
+  
+  /*This is for screens large than 800px*/
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: lightgoldenrodyellow;
+    }
+  }
+  

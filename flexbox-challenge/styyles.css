@@ -1,0 +1,65 @@
+/*Challenge 1*/
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    list-style: none;
+  }
+  a {
+    text-decoration: NONE;
+    color: WHITE;
+    background: steelblue;
+    border: darkcyan 1px solid;
+    border-radius: 6px;
+  }
+  /*Challenge 2*/
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cc {
+    margin: 10px;
+    color: WHITE;
+    background: steelblue;
+    border: darkcyan 1px solid;
+    flex: 1;
+    list-style: none;
+    border-radius: 6px;
+  }
+  
+  /*Challenge 3*/
+  /*Write your CSS here*/
+  li,
+  .child {
+    color: WHITE;
+    background: steelblue;
+    border: darkcyan 2px solid;
+    border-radius: 6px;
+    padding: 8px;
+  }
+  .parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*challenge 4*/
+  .section2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .ccc {
+    margin: 10px;
+    background: white;
+    border: pink 1px solid;
+    list-style: none;
+    color: WHITE;
+    background: steelblue;
+    border: darkcyan 2px solid;
+    border-radius: 6px;
+  }
+  

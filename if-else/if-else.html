@@ -1,0 +1,44 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>IF/ELSE</title>
+  </head>
+  
+  <body>
+    <script>
+    //exercise 1
+      let hour = prompt("Enter an hour (0-23):");
+      
+      if (hour < 12){
+        alert("Good Morning!");
+      } else if (hour < 18){
+        alert("Good Afternoon!");
+      } else{
+        alert("Good Evening!");
+      }
+      
+      //exercise 2
+      let number = prompt("Enter a number:");
+      if (number % 2 == 0){
+        alert("Even number");
+      } else{
+        alert("Odd number");
+      }
+      
+      //exercise 3
+      let score = prompt("Enter a score (0-100):");
+      let extra = prompt("Are you in any extracurricular activities?Y/N:");
+   
+      
+      //exercise 4
+      let coin = Math.random();
+      if(coin<=0.5){
+        console.log("heads");
+      }else{
+        console.log("tails");
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+a {
+    background-color: mediumvioletred;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all ease-in 0.1s;
+  }
+  
+  nav {
+    display: grid;
+    gap: 0.25rem;
+  }
+  
+  a:hover{
+    background-color:hotpink;
+    color: white;
+  }
+  
